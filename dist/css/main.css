@@ -90,7 +90,6 @@ img {
   .header.sticky {
     display: none; }
   .header.sticky {
-    position: static;
     display: none; }
   .header__logo {
     width: 75px; } }
@@ -661,7 +660,7 @@ img {
     display: block;
     position: absolute;
     background-color: #333A44;
-    top: 100%;
+    top: 218%;
     left: 0;
     width: 70%;
     height: calc(100vh - 44px); }
@@ -671,8 +670,7 @@ img {
     margin: 0; }
   .nav__list {
     flex-direction: column;
-    text-align: center;
-    padding-top: 41px; }
+    padding-top: 64px; }
   .nav__list-item {
     margin: 0;
     padding: 0;
