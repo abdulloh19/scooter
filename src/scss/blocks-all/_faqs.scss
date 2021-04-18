@@ -1,0 +1,125 @@
+.faqs__title
+{
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: #495567;
+    text-align: center;
+}
+.faqs__how
+{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #495567;
+    width: 350px;
+}
+.faqs__textt
+{
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    color: #495567;
+    background-color: #F2F5F9;
+}
+.faqs__text
+{
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    color: #495567;
+    background-color: #F2F5F9;
+    padding: 32px 40px;
+    position: relative;
+
+    &::after
+    {
+        content: '';
+        position: absolute;
+        background: url("../img/pastga.png") no-repeat center center;
+        width: 16px;
+        height: 8px;
+        top: 40px;
+        right: 40px;
+    }
+}
+.faqs__paragrif
+{
+    font-size: $size;
+    line-height: $olchami;
+    font-weight: 400;
+    color: #495567;
+    @include font;
+    width: 650px;
+}
+.faqs__item
+{
+    display: flex;
+}
+.faqs__wrapp
+{
+    margin-top: 30px;
+    background-color: #F2F5F9;
+    padding: 32px 40px;
+    position: relative;
+
+    &::after
+    {
+        content: '';
+        position: absolute;
+        background: url("../img/tepaga.png") no-repeat center center;
+        width: 16px;
+        height: 8px;
+        top: 64px;
+        right: 40px;
+    }
+}
+
+@media screen and (max-width: 1105px)
+{
+    .faqs__item
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 690px)
+{
+    .faqs__how
+    {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+    .faqs__textt
+    {
+        width: 251px;
+    }
+    .faqs__paragrif
+    {
+        width: 251px;
+    }
+    .faqs__title
+    {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .faqs__wrapp
+    {
+        &::after{
+            top: 80px;
+            right: 30px;
+        }
+    }
+    .faqs__text
+    {
+        width: auto;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+}

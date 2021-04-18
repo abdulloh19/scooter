@@ -1,0 +1,44 @@
+.footer
+{
+    background-color: #333A44;
+}
+.footer__container
+{
+    padding: 32px;
+    display: flex;
+    align-items: center;
+}
+.footer__nav-list
+{
+    display: flex;
+    margin-left: auto;
+}
+.footer__nav-list-item
+{
+    padding-left: 24px;
+}
+
+@media screen and (max-width: 690px)
+{
+    .footer__nav-list
+    {
+        margin: 0;
+    }
+    .footer__container
+    {
+        display: block;
+        padding-top: 64px;
+    }
+    .footer__nav-list
+    {
+        margin-left: 0;
+    }
+    .footer__nav-list-item
+    {
+        margin: 0 auto;
+    }
+    .footer__logo{
+        margin-left: 90px;
+    }
+    
+}
