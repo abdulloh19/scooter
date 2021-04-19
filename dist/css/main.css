@@ -713,7 +713,9 @@ img {
     padding: 0;
     padding-bottom: 16px; }
   .nav__list-link {
-    color: #fff; } }
+    color: #fff; }
+  .nav__list2 {
+    text-align: center; } }
 
 .content {
   background: url("../img/aboutbg.jpg") no-repeat center center;
