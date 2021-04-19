@@ -697,7 +697,7 @@ img {
     top: 100%;
     left: 0;
     width: 100%;
-    height: calc(100vh - 0px);
+    height: calc(100vh - 35px);
     display: block;
     overflow: hidden;
     animation: opener 0.4s reverse; }
