@@ -90,6 +90,13 @@ only screen and (min-resolution: 2dppx) {
     background-color: #FCB72B;
     padding: 14px 39px;
     margin-left: auto;
+
+    &:hover
+    {
+        background: 0;
+        color: #FCB72B;
+        border: 1px solid #FCB72B;
+    }
 }
 
 @media screen and (max-width: 1105px) {

@@ -18,6 +18,11 @@
     font-size: $size;
     line-height: $olchami;
     font-weight: 700;
+
+    &:hover
+    {
+        color: #FCB72B;
+    }
 }
 @keyframes opener{
     0% {

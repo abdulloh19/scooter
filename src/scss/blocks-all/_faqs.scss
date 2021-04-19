@@ -86,7 +86,11 @@
 }
 .faqs__text
 {
-    display: none;
+    // display: none;
+    &:hover
+    {
+        background-color: #FFF4DF;
+    }
 }
 
 @media screen and (max-width: 1105px)
