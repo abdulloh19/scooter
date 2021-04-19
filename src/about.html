@@ -18,16 +18,16 @@
             <button class="hamburger" type="button">
                 <span class="hamburger__span"> </span>
             </button>
-            <a class="header__logo" href="#">
+            <a class="header__logo" href="index.html">
                 <picture>
                     <img class="header__logo" src="./img/icon-desktop.svg" alt="">
                 </picture>
             </a>
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__list-item"><a class="nav__list-link nav__list-link--active"
-                            href="index.html">About</a></li>
-                    <li class="nav__list-item"><a class="nav__list-link" href="about.html">Location</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link"
+                            href="about.html">About</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#">Location</a></li>
                     <li class="nav__list-item"><a class="nav__list-link" href="#">Careers</a></li>
                 </ul>
             </nav>
@@ -56,6 +56,7 @@
                                 srcset="img/about-telephone-mobile.webp">
                             <source media="(max-width: 690px)"
                                 srcset="img/about-telephone-mobile.jpg 1x, img/about-telephone-mobile@2x.jpg 2x">
+                                <source type="image/webp" srcset="img/about-telephone.webp">
                             <img class="section-about__img" src="./img/about-telephone.jpg"
                                 srcset="img/about-telephone@2x.jpg 2x" alt="">
                         </picture>
@@ -71,6 +72,7 @@
                             <source type="image/webp" media="(max-width: 690px)" srcset="img/trassa-mobile.webp">
                             <source media="(max-width: 690px)"
                                 srcset="img/trassa-mobile.jpg 1x, img/trassa-mobile@2x.jpg 2x">
+                                <source type="image/webp" srcset="img/trassa.webp">
                             <img class="section-about__img" src="./img/trassa.jpg" srcset="img/trassa@2x.jpg 2x" alt="">
                         </picture>
                     </li>
@@ -82,8 +84,11 @@
                 <h2 class="about-content__title">Our values</h2>
                 <ul class="about-content__list">
                     <li class="about-content__item about-content__item--1">
+                       <picture>
+                        <source type="image/webp" srcset="img/01.webp">
                         <img class="about-content__img" src="./img/01.jpg" srcset="img/01.jpg 1x, img/01@2x.jpg 2x"
-                            width="240" height="240" alt="">
+                        width="240" height="240" alt="">
+                       </picture>
                         <div class="about-content__wrapper">
                             <h3 class="about-content__content">Our tech</h3>
                             <p class="about-content__paragrif">We’re using cutting edge technology to drive accessible
@@ -91,8 +96,11 @@
                         </div>
                     </li>
                     <li class="about-content__item about-content__item--2">
+                       <picture>
+                           <source type="image/webp" srcset="img/02.webp">
                         <img class="about-content__img about-content__img--2" src="./img/02.jpg"
-                            srcset="img/02.jpg 1x, img/02@2x.jpg 2x" width="240" height="240" alt="">
+                        srcset="img/02.jpg 1x, img/02@2x.jpg 2x" width="240" height="240" alt="">
+                       </picture>
                         <div class="about-content__wrapper">
                             <h3 class="about-content__content">Our integrity</h3>
                             <p class="about-content__paragrif">We’re using cutting edge technology to drive accessible
@@ -100,8 +108,11 @@
                         </div>
                     </li>
                     <li class="about-content__item about-content__item--3">
+                      <picture>
+                        <source type="image/webp" srcset="img/03.webp">
                         <img class="about-content__img" src="./img/03.jpg" srcset="img/03.jpg 1x, img/03@2x.jpg 2x"
-                            width="240" height="240" alt="">
+                        width="240" height="240" alt="">
+                      </picture>
                         <div class="about-content__wrapper">
                             <h3 class="about-content__content">Our community</h3>
                             <p class="about-content__paragrif">We’re using cutting edge technology to drive accessible
@@ -118,13 +129,13 @@
                     <li class="faqs__item">
                         <h3 class="faqs__how">How it works</h3>
                         <div class="faqs__wrapper">
-                            <div class="faqs__wrapp">
+                            <button class="faqs__wrapp">
                                 <p class="faqs__textt">How do I download the app?</p>
                                 <p class="faqs__paragrif">To download the Scoot app, you can search “Scoot” in both the
                                     App and Google Play stores. An even simpler way to do it would be to click the
                                     relevant link at the bottom of this page and you’ll be re-directed to the correct
                                     page.</p>
-                            </div>
+                            </button>
                             <p class="faqs__text">Can I find a nearby Scoots?</p>
                             <p class="faqs__text">Do I need a license to ride?</p>
                         </div>
@@ -133,13 +144,13 @@
                     <li class="faqs__item">
                         <h3 class="faqs__how">Safe driving</h3>
                         <div class="faqs__wrapper">
-                            <div class="faqs__wrapp">
+                            <button class="faqs__wrapp">
                                 <p class="faqs__textt">How do I download the app?</p>
                                 <p class="faqs__paragrif">To download the Scoot app, you can search “Scoot” in both the
                                     App and Google Play stores. An even simpler way to do it would be to click the
                                     relevant link at the bottom of this page and you’ll be re-directed to the correct
                                     page.</p>
-                            </div>
+                            </button>
                             <p class="faqs__text">Can I find a nearby Scoots?</p>
                             <p class="faqs__text">Do I need a license to ride?</p>
                         </div>
@@ -153,16 +164,20 @@
                 <div class="intro__wrapper">
                     <a class="intro__img" href="#">
                         <picture>
+                            <source type="image/webp" media="(max-width: 1105px)" srcset="img/appstore-tablet.webp">
                             <source media="(max-width: 1105px)"
-                                srcset="img/appstore-tablet.png 1x, img/appstore-tablet@2x.png 2x">
+                            srcset="img/appstore-tablet.png 1x, img/appstore-tablet@2x.png 2x">
+                            <source type="image/webp" srcset="img/appstore.webp">
                             <img src="./img/appstore.png"
                                 srcset="img/appstore.png 1x, img/appstore@2x.png 2x" alt="">
                         </picture>
                     </a>
                     <a class="intro__img" href="#">
                         <picture>
+                            <source type="image/webp" media="(max-width: 1105px)" srcset="img/google-tablet.webp">
                             <source media="(max-width: 1105px)"
                                 srcset="img/google-tablet.png 1x, img/google-tablet@2x.png 2x">
+                                <source type="image/webp" srcset="img/google-play.webp" >
                             <img src="./img/google-play.png"
                                 srcset="img/google-play.png 1x, img/google-play@2x.png 2x" alt="">
                         </picture>
@@ -173,21 +188,24 @@
     </main>
     <footer class="footer">
         <div class="container footer__container">
-            <a href="#"><img class="footer__logo" src="./img/icon-footer.svg" alt=""></a>
+            <a href="index.html"><img class="footer__logo" src="./img/icon-footer.svg" alt=""></a>
             <nav class="nav nav--2">
-                <ul class="nav__list">
-                    <li class="nav__list-item"><a class="nav__list-link" href="index.html">About</a></li>
+                <ul class="nav__list nav__list--2">
+                    <li class="nav__list-item"><a class="nav__list-link" href="#">About</a></li>
                     <li class="nav__list-item"><a class="nav__list-link" href="#">Location</a></li>
                     <li class="nav__list-item"><a class="nav__list-link" href="#">Careers</a></li>
                 </ul>
             </nav>
             <ul class="footer__nav-list">
-                <li class="footer__nav-list-item"><a href="#"><img src="./img/facebook.png"
-                            srcset="img/facebook.png 1x, img/facebook@2x.png 2x" alt=""></a></li>
-                <li class="footer__nav-list-item"><a href="#"><img src="./img/twitter.png"
-                            srcset="img/twitter.png 1x, img/twitter@2x.png 2x" alt=""></a></li>
-                <li class="footer__nav-list-item"><a href="#"><img src="./img/instagram.png"
-                            srcset="img/instagram.png 1x, img/instagram@2x.png 2x" alt=""></a></li>
+                <li class="footer__nav-list-item"><a href="#"><svg class="footer__svg-img" width="24" height="24">
+                    <use xlink:href="#facebook"></use>
+                </svg></a></li>
+                <li class="footer__nav-list-item"><a href="#"><svg class="footer__svg-img" width="24" height="20">
+                    <use xlink:href="#twitter"></use>
+                </svg></a></li>
+                <li class="footer__nav-list-item"><a href="#"><svg class="footer__svg-img" width="24" height="24">
+                    <use xlink:href="#instagram"></use>
+                </svg></a></li>
             </ul>
         </div>
     </footer>

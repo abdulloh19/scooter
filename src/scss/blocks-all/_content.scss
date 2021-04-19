@@ -1,6 +1,6 @@
 .content
 {
-    background: url("../../img/aboutbg.jpg") no-repeat center center;
+    background: url("../img/aboutbg.jpg") no-repeat center center;
     background-size: cover;
     position: relative;
 
@@ -12,7 +12,7 @@ only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {
 
     .content {
-        background: url("../../img/aboutbg@2x.jpg") no-repeat center center;
+        background: url("../img/aboutbg@2x.jpg") no-repeat center center;
     }
 
 }
@@ -31,7 +31,7 @@ only screen and (min-resolution: 2dppx) {
     {
         content: '';
         position: absolute;
-        background: url("../../img/aboutdumalog.png") no-repeat center center;
+        background: url("../img/aboutdumalog.png") no-repeat center center;
         width: 234px;
         height: 63px;
         top: 70px;
@@ -65,7 +65,7 @@ only screen and (min-resolution: 2dppx) {
     only screen and (min-resolution: 2dppx) {
     
         .content {
-            background: url("../img/aboutb-tabletg@2x.jpg") no-repeat center center;
+            background: url("../img/aboutbg-tablet@2x.jpg") no-repeat center center;
         }
     
     }

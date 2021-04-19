@@ -89,10 +89,9 @@ img {
     display: none; }
   .header.sticky {
     display: none; }
-  .header.sticky {
-    display: none; }
   .header__logo {
-    width: 75px; } }
+    width: 75px;
+    margin-right: 106px; } }
 
 .hero {
   background: url("../img/scooter.jpg") no-repeat center center;
@@ -184,9 +183,7 @@ img {
   .hero {
     background: url("../img/scooter-tablet@2x.jpg") no-repeat center center;
     background-size: cover;
-    background-position: center center;
-    margin: 0;
-    padding: 0; } }
+    background-position: center center; } }
 
 @media screen and (max-width: 1105px) {
   .hero__scooter {
@@ -586,6 +583,9 @@ img {
 .footer__nav-list-item {
   padding-left: 24px; }
 
+.footer__svg-img {
+  fill: #ccc; }
+
 @media screen and (max-width: 690px) {
   .footer__nav-list {
     margin: 0; }
@@ -593,7 +593,9 @@ img {
     display: block;
     padding-top: 64px; }
   .footer__nav-list {
-    margin-left: 0; }
+    margin-left: 0;
+    margin-right: 20px;
+    padding-bottom: 88px; }
   .footer__nav-list-item {
     margin: 0 auto; }
   .footer__logo {
@@ -635,6 +637,8 @@ img {
 
 @media screen and (max-width: 690px) {
   .hamburger {
+    display: block; }
+  .hamburger--active .header__link {
     display: block; } }
 
 .nav__list {
@@ -653,38 +657,57 @@ img {
   line-height: 25px;
   font-weight: 700; }
 
+@-webkit-keyframes opener {
+  0% {
+    transform: translateX(-100%); }
+  70% {
+    transform: translateX(70px); }
+  100% {
+    transform: translate(0); } }
+
+@keyframes opener {
+  0% {
+    transform: translateX(-100%); }
+  70% {
+    transform: translateX(70px); }
+  100% {
+    transform: translate(0); } }
+
 @media screen and (max-width: 690px) {
   .nav {
     display: none; }
   .nav--active {
-    display: block;
     position: absolute;
-    background-color: #333A44;
-    top: 218%;
+    background: linear-gradient(to right, #333A44 80%, rgba(51, 58, 68, 0.7) 80%, rgba(51, 58, 68, 0.7) 100%);
+    top: 237%;
     left: 0;
-    width: 70%;
-    height: calc(100vh - 44px); }
+    width: 100%;
+    height: 100vh;
+    display: block;
+    overflow: hidden;
+    animation: opener 0.4s reverse; }
   .nav--2 {
     display: block; }
-  .nav {
-    margin: 0; }
   .nav__list {
     flex-direction: column;
-    padding-top: 64px; }
+    padding-top: 30px;
+    padding-bottom: 45px; }
   .nav__list-item {
     margin: 0;
     padding: 0;
     padding-bottom: 16px; }
   .nav__list-link {
-    color: #fff; } }
+    color: #fff; }
+  .nav__list--2 {
+    text-align: center; } }
 
 .content {
-  background: url("../../img/aboutbg.jpg") no-repeat center center;
+  background: url("../img/aboutbg.jpg") no-repeat center center;
   background-size: cover;
   position: relative; }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .content .content {
-      background: url("../../img/aboutbg@2x.jpg") no-repeat center center; } }
+      background: url("../img/aboutbg@2x.jpg") no-repeat center center; } }
   .content::before {
     content: '';
     position: absolute;
@@ -697,7 +720,7 @@ img {
   .content::after {
     content: '';
     position: absolute;
-    background: url("../../img/aboutdumalog.png") no-repeat center center;
+    background: url("../img/aboutdumalog.png") no-repeat center center;
     width: 234px;
     height: 63px;
     top: 70px;
@@ -719,7 +742,7 @@ img {
 
 @media only screen and (max-width: 1105px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1105px) and (min-device-pixel-ratio: 2), only screen and (max-width: 1105px) and (min-resolution: 192dpi), only screen and (max-width: 1105px) and (min-resolution: 2dppx) {
   .content {
-    background: url("../img/aboutb-tabletg@2x.jpg") no-repeat center center; } }
+    background: url("../img/aboutbg-tablet@2x.jpg") no-repeat center center; } }
 
 @media screen and (max-width: 1105px) {
   .content__title {
@@ -1012,7 +1035,8 @@ img {
     width: 16px;
     height: 8px;
     top: 40px;
-    right: 40px; }
+    right: 40px;
+    cursor: pointer; }
 
 .faqs__paragrif {
   font-size: 15px;
@@ -1029,7 +1053,8 @@ img {
   margin-top: 30px;
   background-color: #F2F5F9;
   padding: 32px 40px;
-  position: relative; }
+  position: relative;
+  border: none; }
   .faqs__wrapp::after {
     content: '';
     position: absolute;
@@ -1037,7 +1062,14 @@ img {
     width: 16px;
     height: 8px;
     top: 64px;
-    right: 40px; }
+    right: 40px;
+    cursor: pointer; }
+
+.faqs__wrapp--active .faqs__text {
+  display: block; }
+
+.faqs__text {
+  display: none; }
 
 @media screen and (max-width: 1105px) {
   .faqs__item {

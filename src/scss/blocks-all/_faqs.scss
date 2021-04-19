@@ -44,6 +44,7 @@
         height: 8px;
         top: 40px;
         right: 40px;
+        cursor: pointer;
     }
 }
 .faqs__paragrif
@@ -65,6 +66,7 @@
     background-color: #F2F5F9;
     padding: 32px 40px;
     position: relative;
+    border: none;
 
     &::after
     {
@@ -75,7 +77,16 @@
         height: 8px;
         top: 64px;
         right: 40px;
+        cursor: pointer;
     }
+}
+.faqs__wrapp--active .faqs__text
+{
+    display: block;
+}
+.faqs__text
+{
+    display: none;
 }
 
 @media screen and (max-width: 1105px)
