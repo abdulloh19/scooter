@@ -713,9 +713,7 @@ img {
     padding: 0;
     padding-bottom: 16px; }
   .nav__list-link {
-    color: #fff; }
-  .nav__list--2 {
-    text-align: center; } }
+    color: #fff; } }
 
 .content {
   background: url("../img/aboutbg.jpg") no-repeat center center;
@@ -1112,3 +1110,6 @@ img {
     width: auto;
     font-size: 18px;
     line-height: 24px; } }
+
+.body--hidden {
+  overflow: hidden; }
