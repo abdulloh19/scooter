@@ -539,6 +539,7 @@ img {
     margin-bottom: 120px; } }
 
 .intro {
+  position: relative;
   background-color: #495567; }
 
 .intro__container {
@@ -596,7 +597,7 @@ img {
 .footer__nav-list-item {
   padding-left: 24px; }
 
-.footer__svg-img {
+.footer__svg {
   fill: #ccc; }
 
 @media screen and (max-width: 690px) {
@@ -658,6 +659,9 @@ img {
   list-style: none;
   display: flex; }
 
+.nav__list2 {
+  display: flex; }
+
 .nav__list-item {
   padding-left: 32px; }
   .nav__list-item:nth-child(1) {
@@ -715,7 +719,8 @@ img {
   .nav__list-link {
     color: #fff; }
   .nav__list2 {
-    text-align: center; } }
+    text-align: center;
+    flex-direction: column; } }
 
 .content {
   background: url("../img/aboutbg.jpg") no-repeat center center;
@@ -1070,7 +1075,9 @@ img {
   background-color: #F2F5F9;
   padding: 32px 40px;
   position: relative;
-  border: none; }
+  border: none;
+  text-align: left;
+  cursor: pointer; }
   .faqs__wrapp::after {
     content: '';
     position: absolute;
@@ -1081,11 +1088,8 @@ img {
     right: 40px;
     cursor: pointer; }
 
-.faqs__wrapp--active .faqs__text {
+.faqs__wrapp--active .faqs__paragrif {
   display: block; }
-
-.faqs__text:hover {
-  background-color: #FFF4DF; }
 
 @media screen and (max-width: 1105px) {
   .faqs__item {
@@ -1105,9 +1109,11 @@ img {
   .faqs__title {
     font-size: 32px;
     line-height: 32px; }
-  .faqs__wrapp::after {
-    top: 80px;
-    right: 30px; }
+  .faqs__wrapp {
+    text-align: left; }
+    .faqs__wrapp::after {
+      top: 80px;
+      right: 30px; }
   .faqs__text {
     width: auto;
     font-size: 18px;

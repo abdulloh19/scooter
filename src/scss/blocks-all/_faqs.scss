@@ -67,6 +67,8 @@
     padding: 32px 40px;
     position: relative;
     border: none;
+    text-align: left;
+    cursor: pointer;
 
     &::after
     {
@@ -80,17 +82,13 @@
         cursor: pointer;
     }
 }
-.faqs__wrapp--active .faqs__text
+.faqs__wrapp--active .faqs__paragrif
 {
     display: block;
 }
-.faqs__text
+.faqs__paragrif
 {
     // display: none;
-    &:hover
-    {
-        background-color: #FFF4DF;
-    }
 }
 
 @media screen and (max-width: 1105px)
@@ -125,6 +123,7 @@
     }
     .faqs__wrapp
     {
+        text-align: left;
         &::after{
             top: 80px;
             right: 30px;

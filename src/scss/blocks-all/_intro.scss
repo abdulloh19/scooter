@@ -1,7 +1,20 @@
 .intro
 {
-    // position: relative;
+    position: relative;
     background-color: #495567;
+    
+    // &::after
+    // {
+    //     content: '';
+    //     position: absolute;
+    //     background: url("../../img/there.png") no-repeat right bottom;
+    //     background-size:contain;
+    //     width: 800px;
+    //     height: 100px;
+    //     top: 230px;
+    //     right: 0;
+    //     overflow-x: hidden;
+    // }
   
 }
 

@@ -2,6 +2,10 @@
     list-style: none;
     display: flex;
 }
+.nav__list2
+{
+    display: flex;
+}
 
 .nav__list-item {
     padding-left: 32px;
@@ -80,5 +84,6 @@
     .nav__list2
     {
         text-align: center;
+        flex-direction: column;
     }
 }
