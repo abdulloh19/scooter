@@ -46,16 +46,25 @@ img {
     max-width: 311px; } }
 
 .header {
-  position: sticky;
+  position: fixed;
   z-index: 20;
   align-items: center;
   top: 0;
+  width: 100%;
+  padding-bottom: 15px;
   padding-top: 20px;
   background-color: #fff; }
 
 .header__container {
   align-items: center;
   display: flex; }
+
+.header.sticky {
+  background: #e5e2e2;
+  padding: 20px 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  -webkit-animation: open 0.3s linear;
+          animation: open 0.3s linear; }
 
 @-webkit-keyframes open {
   from {
@@ -68,13 +77,6 @@ img {
     transform: translateY(-100%); }
   to {
     transform: translateY(0); } }
-
-.header.sticky {
-  background: #e5e2e2;
-  padding: 10px 20px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  -webkit-animation: open 0.3s linear;
-          animation: open 0.3s linear; }
 
 .header__link {
   color: #fff;
@@ -1038,17 +1040,26 @@ img {
   letter-spacing: -1px;
   font-weight: 700;
   color: #495567;
-  background-color: #F2F5F9; }
+  background-color: #F2F5F9;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding-right: 340px; }
 
 .faqs__text {
   font-size: 24px;
   line-height: 28px;
   letter-spacing: -1px;
+  padding: 32px 40px;
+  padding-right: 300px;
   font-weight: 700;
   color: #495567;
   background-color: #F2F5F9;
-  padding: 32px 40px;
-  position: relative; }
+  position: relative;
+  border: none;
+  margin-bottom: 20px; }
+  .faqs__text:hover {
+    background-color: #FFF4DF; }
   .faqs__text::after {
     content: '';
     position: absolute;
@@ -1065,7 +1076,11 @@ img {
   font-weight: 400;
   color: #495567;
   font-family: 'Lexend Deca';
-  width: 650px; }
+  width: 650px;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 20px; }
 
 .faqs__item {
   display: flex; }
@@ -1077,7 +1092,8 @@ img {
   position: relative;
   border: none;
   text-align: left;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 20px; }
   .faqs__wrapp::after {
     content: '';
     position: absolute;
@@ -1091,10 +1107,19 @@ img {
 .faqs__wrapp--active .faqs__paragrif {
   display: block; }
 
+.faqs__paragrif {
+  display: none; }
+
 @media screen and (max-width: 1105px) {
   .faqs__item {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .faqs__textt {
+    padding-right: 270px; }
+  .faqs__paragrif {
+    width: 572px; }
+  .faqs__text {
+    padding-right: 226px; } }
 
 @media screen and (max-width: 690px) {
   .faqs__how {
@@ -1103,21 +1128,31 @@ img {
     letter-spacing: -1px;
     text-align: center; }
   .faqs__textt {
-    width: 251px; }
+    width: auto;
+    font-size: 18px;
+    line-height: 24px;
+    padding-right: 28px;
+    width: 219px; }
   .faqs__paragrif {
-    width: 251px; }
+    width: 251px;
+    line-height: 25px;
+    font-size: 15px; }
   .faqs__title {
     font-size: 32px;
     line-height: 32px; }
   .faqs__wrapp {
     text-align: left; }
     .faqs__wrapp::after {
-      top: 80px;
-      right: 30px; }
+      top: 65px;
+      right: 50px; }
   .faqs__text {
     width: auto;
     font-size: 18px;
-    line-height: 24px; } }
+    line-height: 24px;
+    padding: 0;
+    padding: 32px 44px 32px 32px; }
+    .faqs__text::after {
+      right: 18px; } }
 
 .body--hidden {
   overflow: hidden; }
