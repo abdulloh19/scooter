@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Document</title>
+</head>
+
+<body class="c">
+    <div style="display: none;">
+        <include src="dist/img/sprite.svg"></include>
+    </div>
+    <header class="header">
+        <div class="container header__container">
+            <button class="hamburger" type="button">
+                <span class="hamburger__span"> </span>
+            </button>
+            <a class="header__logo" href="index.html">
+                <picture>
+                    <img class="header__logo" src="./img/icon-desktop.svg" alt="">
+                </picture>
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a class="nav__list-link" href="about.html">About</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="Location.html">Location</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#">Careers</a></li>
+                </ul>
+            </nav>
+            <a class="header__link" href="#">Get Scootin</a>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="container">
+                <h1 class="content__title">About</h1>
+            </div>
+        </div>
+        <section class="section-about">
+            <div class="container">
+                <ul class="section-about__list">
+                    <li class="section-about__item section-about__item--l section-about__item--1">
+                        <div class="section-about__wrapper">
+                            <h2 class="section-about__title">Care to join our mission?</h2>
+                            <p class="section-about__text">We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!
+                            </p>
+                        </div>
+                        <picture>
+                            <source type="image/webp" media="(max-width: 690px)"
+                                srcset="img/location-mobile.webp">
+                            <source media="(max-width: 690px)"
+                                srcset="img/location-mobile.jpg 1x, img/location-mobile@2x.jpg 2x">
+                            <source type="image/webp" srcset="img/location.webp">
+                            <img class="section-about__img" src="./img/location.jpg"
+                                srcset="img/location@2x.jpg 2x" alt="">
+                        </picture>
+                    </li>
+                </ul>
+                <a class="section__link" href="#">Say Hello</a>
+            </div>
+        </section>
+        <section class="about-content">
+            <div class="container">
+                <h2 class="about-content__title">Why join us?</h2>
+                <ul class="about-content__list">
+                    <li class="about-content__item about-content__item--1">
+                       <picture>
+                        <source type="image/webp" srcset="img/01.webp">
+                        <img class="about-content__img" src="./img/01.jpg" srcset="img/01.jpg 1x, img/01@2x.jpg 2x"
+                        width="240" height="240" alt="">
+                       </picture>
+                        <div class="about-content__wrapper">
+                            <h3 class="about-content__content">Our tech</h3>
+                            <p class="about-content__paragrif">We’re using cutting edge technology to drive accessible
+                                urban transportation forward. Our fully electric scooters are a joy to ride!</p>
+                        </div>
+                    </li>
+                    <li class="about-content__item about-content__item--2">
+                       <picture>
+                           <source type="image/webp" srcset="img/02.webp">
+                        <img class="about-content__img about-content__img--2" src="./img/02.jpg"
+                        srcset="img/02.jpg 1x, img/02@2x.jpg 2x" width="240" height="240" alt="">
+                       </picture>
+                        <div class="about-content__wrapper">
+                            <h3 class="about-content__content">Our integrity</h3>
+                            <p class="about-content__paragrif">We’re using cutting edge technology to drive accessible
+                                urban transportation forward. Our fully electric scooters are a joy to ride!</p>
+                        </div>
+                    </li>
+                    <li class="about-content__item about-content__item--3">
+                      <picture>
+                        <source type="image/webp" srcset="img/03.webp">
+                        <img class="about-content__img" src="./img/03.jpg" srcset="img/03.jpg 1x, img/03@2x.jpg 2x"
+                        width="240" height="240" alt="">
+                      </picture>
+                        <div class="about-content__wrapper">
+                            <h3 class="about-content__content">Our community</h3>
+                            <p class="about-content__paragrif">We’re using cutting edge technology to drive accessible
+                                urban transportation forward. Our fully electric scooters are a joy to ride!</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    </body>
+    </html>

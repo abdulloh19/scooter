@@ -38,8 +38,10 @@
     .hamburger{
         display: block;
     }
-    .hamburger--active .header__link
-    {
-        display: block;
-    }
+    // .hamburger--active .header__link
+    // {
+    //     display: block;
+    //     z-index: 50;
+    //     position: absolute;
+    // }
 }

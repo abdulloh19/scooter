@@ -58,6 +58,11 @@
         cursor: pointer;
     }
 }
+// @keyframes mymove {
+//     0% {transform: rotate(5deg) translateY(0%);}
+//     50% {transform: rotate(-5deg) translateY(30%);}
+//     100% {transform: rotate(3deg) translateY(50%);}
+//   }
 .faqs__paragrif
 {
     font-size: $size;
@@ -70,6 +75,7 @@
     text-align: left;
     cursor: pointer;
     margin-bottom: 20px;
+    // animation: mymove 0.5s normal;
 }
 .faqs__item
 {
@@ -135,6 +141,7 @@
         line-height: 28px;
         letter-spacing: -1px;
         text-align: center;
+        width: auto;
     }
     .faqs__textt
     {
@@ -146,7 +153,7 @@
     }
     .faqs__paragrif
     {
-        width: 251px;
+        width: 219px;
         line-height: 25px;
         font-size: 15px;
     }
@@ -169,7 +176,6 @@
         width: auto;
         font-size: 18px;
         line-height: 24px;
-        // padding-right: 60px;
         padding: 0;
         padding: 32px 44px 32px 32px;
 
