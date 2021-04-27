@@ -62,16 +62,8 @@
     transform: translateX(-125%);
 }
 
-.section-about__wrapper--wrap {
-    
-}
-
 .section-about__wrapper {
     flex-grow: 1;
-
-    &:first-child {
-        // margin-bottom: 0;
-    }
 }
 
 .section-about__wrapper--2 {
