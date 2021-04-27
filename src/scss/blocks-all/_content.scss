@@ -75,13 +75,29 @@ only screen and (min-resolution: 2dppx) {
 {
     .content
     {
+        background: url("../img/aboutbg-mobile.jpg");
+        background-size: contain;
+
         &::after
         {
             display: none;
         }
-        .content__title
-        {
-            margin-left: 120px;
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    
+        .content {
+            background: url("../img/aboutbg-mobile@2x.jpg");
+            background-size: contain;
         }
+    
+    }
+    .content__title
+    {
+        margin-left: 80px;
     }
 }

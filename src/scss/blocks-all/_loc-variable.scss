@@ -1,0 +1,66 @@
+.loc-variable__list
+{
+    color: #495567;
+    margin-top: 120px;
+    flex-grow: 1;
+    margin-bottom: 160px;
+}
+.loc-variable__item
+{
+    display: flex;
+    flex-grow: 1;
+    padding: 32px 30px;
+    align-items: center;
+    margin-bottom: 24px;
+    background-color: #F2F5F9;
+}
+.loc-variable__map
+{
+    @include font;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.loc-variable__linnk
+{
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #FCB72B;
+    padding: 14px 67px;
+
+    &:hover {
+        background: 0;
+        color: #FCB72B;
+        border: 1px solid #FCB72B;
+    }
+}
+.loc-variable__title
+{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    letter-spacing: -1.07px;
+}
+.loc-variable__wrap
+{
+    padding-left: 40px;
+    flex-grow: 1;
+}
+  @media screen and (max-width: 690px) {
+    .loc-variable__item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .loc-variable__title {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.8px;
+    }
+    .loc-variable__wrap {
+        padding-left: 0;
+    }
+   }

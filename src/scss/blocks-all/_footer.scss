@@ -4,7 +4,7 @@
 }
 .footer__container
 {
-    padding: 32px;
+    padding: 32px 0;
     display: flex;
     align-items: center;
 }
@@ -31,16 +31,19 @@
     }
     .footer__nav-list
     {
-        margin-left: 29px;
-        // margin-right: 20px;
+        margin-left: 87px;
         padding-bottom: 88px;
     }
     .footer__nav-list-item
     {
-        margin: 0 auto;
+        // margin: 0 auto;
     }
     .footer__logo{
-        margin-left: 90px;
+        margin-left: 120px;
+    }
+    .footer__list-link
+    {
+        display: block;
     }
     
 }

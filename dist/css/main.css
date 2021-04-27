@@ -572,11 +572,16 @@ img {
   .section__list {
     margin-bottom: 120px; }
   .section__title {
-    text-align: center; } }
+    text-align: center; }
+  .section__link {
+    margin: 0;
+    margin-left: 65px;
+    margin-top: 32px; } }
 
 .intro {
   position: relative;
-  background-color: #495567; }
+  background-color: #495567;
+  margin-top: 120px; }
 
 .intro__container {
   display: flex;
@@ -590,8 +595,7 @@ img {
   line-height: 48px;
   font-weight: 700;
   color: #fff;
-  margin-right: auto;
-  margin-left: 30px; }
+  margin-right: auto; }
 
 @media screen and (max-width: 1105px) {
   .intro__container {
@@ -622,7 +626,7 @@ img {
   background-color: #333A44; }
 
 .footer__container {
-  padding: 32px;
+  padding: 32px 0;
   display: flex;
   align-items: center; }
 
@@ -641,12 +645,12 @@ img {
     display: block;
     padding-top: 64px; }
   .footer__nav-list {
-    margin-left: 29px;
+    margin-left: 87px;
     padding-bottom: 88px; }
-  .footer__nav-list-item {
-    margin: 0 auto; }
   .footer__logo {
-    margin-left: 90px; } }
+    margin-left: 120px; }
+  .footer__list-link {
+    display: block; } }
 
 .hamburger {
   border: none;
@@ -801,10 +805,20 @@ img {
     background: url("../img/aboutbg-tablet@2x.jpg") no-repeat center center; } }
 
 @media screen and (max-width: 690px) {
-  .content::after {
-    display: none; }
-  .content .content__title {
-    margin-left: 120px; } }
+  .content {
+    background: url("../img/aboutbg-mobile.jpg");
+    background-size: contain; }
+    .content::after {
+      display: none; } }
+
+@media only screen and (max-width: 690px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 690px) and (min-device-pixel-ratio: 2), only screen and (max-width: 690px) and (min-resolution: 192dpi), only screen and (max-width: 690px) and (min-resolution: 2dppx) {
+  .content {
+    background: url("../img/aboutbg-mobile@2x.jpg");
+    background-size: contain; } }
+
+@media screen and (max-width: 690px) {
+  .content__title {
+    margin-left: 80px; } }
 
 .section-about__item {
   display: flex;
@@ -895,7 +909,8 @@ img {
     flex-direction: column;
     text-align: center; }
     .section-about__item:nth-child(2) {
-      flex-direction: column; }
+      flex-direction: column;
+      margin-top: 120px; }
     .section-about__item::after {
       transform: translateX(122%); }
   .section-about__text {
@@ -905,7 +920,7 @@ img {
   .section-about__wrapper {
     order: 2;
     margin-top: 56px;
-    margin-bottom: 120px; }
+    margin-left: 0; }
   .section-about__title {
     margin: 0 auto; }
   .section-about__item--2::before {
@@ -929,8 +944,7 @@ img {
   .section-about__item--2::after {
     display: none; }
   .section-about__wrapper {
-    margin: 0;
-    margin-bottom: 120px; }
+    margin-top: 0; }
   .section-about__item--1::before {
     left: -2%;
     top: 119px; }
@@ -1209,3 +1223,58 @@ img {
 
 .body--hidden {
   overflow: hidden; }
+
+.loc-variable__list {
+  color: #495567;
+  margin-top: 120px;
+  flex-grow: 1;
+  margin-bottom: 160px; }
+
+.loc-variable__item {
+  display: flex;
+  flex-grow: 1;
+  padding: 32px 30px;
+  align-items: center;
+  margin-bottom: 24px;
+  background-color: #F2F5F9; }
+
+.loc-variable__map {
+  font-family: 'Lexend Deca';
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400; }
+
+.loc-variable__linnk {
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #FCB72B;
+  padding: 14px 67px; }
+  .loc-variable__linnk:hover {
+    background: 0;
+    color: #FCB72B;
+    border: 1px solid #FCB72B; }
+
+.loc-variable__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  letter-spacing: -1.07px; }
+
+.loc-variable__wrap {
+  padding-left: 40px;
+  flex-grow: 1; }
+
+@media screen and (max-width: 690px) {
+  .loc-variable__item {
+    flex-direction: column;
+    text-align: center; }
+  .loc-variable__title {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.8px; }
+  .loc-variable__wrap {
+    padding-left: 0; } }
